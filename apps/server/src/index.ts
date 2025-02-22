@@ -49,6 +49,6 @@ app.register(getRankingRoutes)
 
 const PORT = env.PORT
 
-app.listen({ port: PORT }, (err, pathname) => {
+app.listen({ port: PORT, host: '0.0.0.0' }, (err, pathname) => {
   console.log(`🚀 Server running at ${pathname}`)
 })

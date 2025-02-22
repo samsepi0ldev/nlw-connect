@@ -1,8 +1,7 @@
-import { env } from '@/env'
-import { accessInviteLink } from '@/functions/access-invite-link'
-import { getSubscribeInviteCount } from '@/functions/get-subscribe-invite-count'
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import z from 'zod'
+
+import { getSubscribeInviteCount } from '@/functions/get-subscribe-invite-count'
 
 export const getSubscriberInviteCountRoutes: FastifyPluginAsyncZod =
   async app => {

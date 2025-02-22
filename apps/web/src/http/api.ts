@@ -4,6 +4,9 @@
  * NLW Connect
  * OpenAPI spec version: 0.0.1
  */
+
+const API_URL = 'http://192.168.1.100:3333'
+
 export type PostSubscriptionsBody = {
   name: string
   email: string
@@ -46,7 +49,7 @@ export type GetRanking200 = {
  * @summary Subscribes someone to the event
  */
 export const getPostSubscriptionsUrl = () => {
-  return 'http://localhost:3333/subscriptions'
+  return `${API_URL}/subscriptions`
 }
 
 export const postSubscriptions = async (
@@ -70,7 +73,7 @@ export const postSubscriptions = async (
  * @summary Access invite link and redirects user
  */
 export const getGetInvitesSubscriberIdUrl = (subscriberId: string) => {
-  return `http://localhost:3333/invites/${subscriberId}`
+  return `${API_URL}/invites/${subscriberId}`
 }
 
 export const getInvitesSubscriberId = async (
@@ -92,7 +95,7 @@ export const getInvitesSubscriberId = async (
  * @summary Get subscriber invite click
  */
 export const getGetSubscriberIdRankingClickUrl = (subscriberId: string) => {
-  return `http://localhost:3333/subscribers/${subscriberId}/ranking/click`
+  return `${API_URL}/subscribers/${subscriberId}/ranking/click`
 }
 
 export const getSubscriberIdRankingClick = async (
@@ -114,7 +117,7 @@ export const getSubscriberIdRankingClick = async (
  * @summary Get subscriber invite count
  */
 export const getGetSubscriberIdRankingCountUrl = (subscriberId: string) => {
-  return `http://localhost:3333/subscribers/${subscriberId}/ranking/count`
+  return `${API_URL}/subscribers/${subscriberId}/ranking/count`
 }
 
 export const getSubscriberIdRankingCount = async (
@@ -136,7 +139,7 @@ export const getSubscriberIdRankingCount = async (
  * @summary Get subscriber ranmking position
  */
 export const getGetSubscriberIdRankingPositionUrl = (subscriberId: string) => {
-  return `http://localhost:3333/subscribers/${subscriberId}/ranking/position`
+  return `${API_URL}/subscribers/${subscriberId}/ranking/position`
 }
 
 export const getSubscriberIdRankingPosition = async (
@@ -158,7 +161,7 @@ export const getSubscriberIdRankingPosition = async (
  * @summary Get ranking
  */
 export const getGetRankingUrl = () => {
-  return 'http://localhost:3333/ranking'
+  return `${API_URL}/ranking`
 }
 
 export const getRanking = async (

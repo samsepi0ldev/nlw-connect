@@ -1,4 +1,3 @@
-import { env } from '@/env'
 import { getRanking } from '@/functions/get-ranking'
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import z from 'zod'
