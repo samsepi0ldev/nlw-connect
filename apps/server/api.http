@@ -1,0 +1,30 @@
+###
+
+POST http://localhost:3333/subscriptions
+content-type: application/json
+
+{
+  "name": "Elliot Alderson",
+  "email": "samsep3l@allsafe.io",
+  "referrer": "9c5c4712-3329-49e9-a92f-a1ede2ccb737"
+}
+
+###
+
+GET http://localhost:3333/invite/82793eb8-eb22-4663-8406-68054abaa8a9
+
+###
+
+GET http://localhost:3333/subscribers/82793eb8-eb22-4663-8406-68054abaa8a9/ranking/click
+
+###
+
+GET http://localhost:3333/subscribers/9c5c4712-3329-49e9-a92f-a1ede2ccb737/ranking/count
+
+###
+
+GET http://localhost:3333/subscribers/82793eb8-eb22-4663-8406-68054abaa8a9/ranking/position
+
+###
+
+GET http://localhost:3333/ranking
